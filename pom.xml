@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.redhat.examples</groupId>
-	<artifactId>resteasy-client-ga</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+    <groupId>com.redhat.examples</groupId>
+    <artifactId>resteasy-client-ga</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
 
-	<properties>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<!-- Productized 4.5.3.Final Fails -->
-		<resteasy.version>4.5.3.Final-redhat-00002</resteasy.version>
+        <!-- Productized 4.5.3.Final Fails -->
+        <resteasy.version>4.5.3.Final-redhat-00002</resteasy.version>
 
-		<!-- Version 4.4.2.Final *Works* -->
-<!-- 		<resteasy.version>4.4.2.Final</resteasy.version> -->
+        <!-- Version 4.4.2.Final *Works* -->
+<!--         <resteasy.version>4.4.2.Final</resteasy.version> -->
 
-		<!-- Productized 4.2.0.Final Fails -->
-<!-- 		<resteasy.version>4.2.0.Final-redhat-00004</resteasy.version> -->
-	</properties>
+        <!-- Productized 4.2.0.Final Fails -->
+<!--         <resteasy.version>4.2.0.Final-redhat-00004</resteasy.version> -->
+    </properties>
 
-	<dependencies>
-		<dependency>
-			<groupId>org.jboss.resteasy</groupId>
-			<artifactId>resteasy-client-microprofile</artifactId>
-			<version>${resteasy.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.jboss.resteasy</groupId>
-			<artifactId>resteasy-jackson2-provider</artifactId>
-			<version>${resteasy.version}</version>
-		</dependency>
-	</dependencies>
+    <dependencies>
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-client-microprofile</artifactId>
+            <version>${resteasy.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-jackson2-provider</artifactId>
+            <version>${resteasy.version}</version>
+        </dependency>
+    </dependencies>
 
-	<repositories>
-		<repository>
-			<id>redhat-ga</id>
-			<name>Red Hat GA Maven Repository</name>
-			<url>https://maven.repository.redhat.com/ga</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
+    <repositories>
+        <repository>
+            <id>redhat-ga</id>
+            <name>Red Hat GA Maven Repository</name>
+            <url>https://maven.repository.redhat.com/ga</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
 </project>
