@@ -15,7 +15,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <!-- Productized 4.5.3.Final Fails -->
-        <resteasy.version>4.5.3.Final-redhat-00002</resteasy.version>
+        <resteasy.version>4.5.6.Final-redhat-00004</resteasy.version>
 
         <!-- Version 4.4.2.Final *Works* -->
 <!--         <resteasy.version>4.4.2.Final</resteasy.version> -->
